@@ -1,0 +1,288 @@
+body {
+  background-color: rgb(125, 227, 231);
+  margin: 0;
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Fondo claro */
+  border-top: 16px solid #3498db;
+  /* Color de la parte superior */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  /* Oculta el loader por defecto */
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contenidoMain {
+  margin-top: 135px; /* Ajusta el valor según el alto de tu header */
+}
+
+
+
+/* Estilo de las tarjetas */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 tarjetas por fila */
+  gap: 20px;
+  /* Espacio entre tarjetas */
+  width: 100%;
+  /* Ocupa todo el ancho de la página */
+  padding: 20px;
+  /* Espacio alrededor del contenedor */
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el ancho total */
+}
+
+.card {
+  display: flex;
+  /* Uso de flexbox para la tarjeta */
+  background-color: rgba(58, 188, 178, 1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: left;
+  /* Alinear texto a la izquierda */
+}
+
+.card-image {
+  width: 150px;
+  /* Ancho de la imagen */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  /* Para que el contenido esté en columna */
+  justify-content: center;
+  /* Centrar el contenido verticalmente */
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.card-paragraph {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: rgba(6, 59, 59, 1);
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: auto;
+  /* Asegura que el botón esté al final */
+  font-size: 0.9em;
+  width: fit-content;
+}
+
+.card-button:hover {
+  background-color: #1a8279;
+}
+
+/*Imgen portada*/
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  width: 99vw;
+  background-image: url("../imagenes/bibliotecafonfito.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    height: 50vh; /* Ajusta la altura del contenedor para dispositivos móviles */
+    width: 100%;
+  }
+  
+}
+
+.texto {
+  margin: 40px;
+  padding: 20px;
+  background-color: transparent;
+  /* Sin fondo */
+  color: #252525;
+  text-align: center;
+}
+
+.Subtítulo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #2c3e50;
+  /* Línea inferior */
+  padding-bottom: 10px;
+}
+
+.contexto {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 10px 0;
+}
+
+@media (min-width: 1025px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 tarjetas por fila */
+    gap: 20px;
+    /* Espacio entre tarjetas */
+  }
+
+  .menu-section {
+    padding: 20px;
+    /* Más padding en pantallas grandes */
+  }
+
+  .input {
+    width: 300px;
+    /* Ancho estándar para computadoras */
+  }
+
+  .botom {
+    padding: 10px 20px;
+    /* Padding estándar para botones */
+  }
+
+  .card-title {
+    font-size: 1.8em;
+    /* Aumentar el tamaño del título */
+  }
+
+  .card-subtitle {
+    font-size: 1.5em;
+    /* Aumentar el tamaño del subtítulo */
+  }
+
+  .card-paragraph {
+    font-size: 1.2em;
+    /* Aumentar el tamaño del texto */
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Tablets */
+  .menu-section {
+    padding: 10px;
+    /* Menor padding en tabletas */
+  }
+
+  .input {
+    width: 80%;
+    /* Ajustar el ancho de la entrada */
+  }
+
+  .botom {
+    width: 80%;
+    /* Ajustar el ancho del botón */
+  }
+
+  .menu ul {
+    flex-direction: column;
+    /* Cambiar a columna en tabletas */
+    align-items: center;
+    /* Centrar elementos */
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+    /* Espacio vertical entre elementos */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ocultar menú principal en pantallas pequeñas */
+  .menu-section {
+    display: none;
+  }
+
+  /* Mostrar menú hamburguesa */
+  .hamburger {
+    display: flex;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    /* 1 tarjeta por fila en pantallas pequeñas */
+  }
+
+  .input {
+    width: 90%;
+    /* Más ancho en dispositivos móviles */
+  }
+
+  .botom {
+    width: 90%;
+    /* Más ancho en dispositivos móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Móviles */
+  #hero {
+    height: 50vh;
+    /* Menor altura en móviles */
+  }
+
+  .texto {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .Subtítulo {
+    font-size: 2rem;
+    /* Tamaño de fuente más pequeño */
+  }
+
+  .contexto {
+    font-size: 1rem;
+    /* Tamaño de fuente más pequeño */
+  }
+}
+

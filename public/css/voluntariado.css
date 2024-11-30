@@ -1,0 +1,548 @@
+/*portada*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibri', sans-serif;
+}
+
+
+
+/*portada*/
+#hero {
+  margin-top: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  /* Imagen de fondo */
+  background-image: url(/public/imagenes/voluntarios-empacando-cajas-caridad-comida-ropa_637285-10741.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Contenedor para el contenido de la portada */
+.hero-content {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  /* Fondo translúcido para mejorar la legibilidad */
+  border-radius: 10px;
+}
+
+/* Estilo del título */
+.tituloHero {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo del texto */
+.contexHero {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo del botón */
+.botomHero {
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #ff7f50;
+  /* Naranja */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.botomHero:hover {
+  background-color: #ff4500;
+  /* Rojo anaranjado cuando se pasa el mouse */
+}
+
+
+
+
+/* CSS para requisitos de voluntariado */
+/* Contenedor principal con Flexbox */
+.conceptos {
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  justify-content: space-between;
+  /* Separa los elementos a los lados */
+
+  /* Espacio entre la imagen y el texto */
+  width: 100%;
+  /* Asegura que ocupe todo el ancho de la pantalla */
+  max-width: 100%;
+  /* Elimina el límite de ancho */
+  margin: 0px;
+  padding: 40px 10%;
+  /* Aumenta el relleno en los laterales (ajusta el valor según lo que necesites) */
+  background: radial-gradient(circle, #fff,#fff,#fff,#fff,#fff, #98e2d7);
+  /* Color de fondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+}
+
+/* Estilo del texto */
+.conceptos-text {
+  max-width: 60%;
+  /* Limita el ancho del texto */
+  color: #2c3e50;
+  /* Color del texto */
+}
+
+/* Título de la sección */
+.subConcepto {
+  font-size: 2rem;
+  color: #e67e22;
+  /* Color del título */
+  margin-bottom: 15px;
+  font-weight: bold;
+  /* Hace el título más destacado */
+}
+
+/* Párrafo de la sección */
+.concep {
+  font-size: 1.125rem;
+  color: #7f8c8d;
+  /* Color del párrafo */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Estilo de la imagen */
+.conceptos-image img {
+  width: 100%;
+  /* Ajusta la imagen al contenedor */
+  max-width: 500px;
+  /* Limita el tamaño máximo de la imagen */
+  height: auto;
+  /* Mantiene las proporciones */
+  border-radius: 10px;
+  /* Bordes redondeados */
+
+  /* Bordes de la imagen con color */
+}
+
+@media screen and (max-width: 768px) {
+  .conceptos {
+    flex-direction: column;
+    /* Cambia la orientación a columna en dispositivos pequeños */  
+    align-items: center;
+    /* Centra verticalmente el contenido */
+  }
+  
+  .conceptos-text {
+    max-width: 100%;
+    /* Ajusta el ancho del texto para dispositivos pequeños */
+    text-align: center;
+    /* Centra el texto en dispositivos pequeños */
+  }
+  
+  .conceptos-image {
+    margin-top: 20px;
+    /* Espacio superior para la imagen en dispositivos pequeños */
+  }
+  
+}
+.rayaAmarilla {
+  width: 95%;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*requisitos */
+.requisitos {
+  display: flex;
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+  align-items: center;
+  /* Centra el contenido verticalmente */
+  gap: 10px;
+  /* Añade separación entre el texto y la imagen */
+  padding: 40px;
+  /* Añade espacio interno */
+  background: radial-gradient(circle, #fff,#fff,#fff,#fff,#fff, #98e2d7);
+  /* Fondo con un color suave */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  width: 100%;
+  /* Establece el ancho de la sección al 90% del contenedor */
+  max-width: 1600px;
+  /* Limita el ancho máximo a 1200px */
+  margin: 0 auto;
+  /* Centra la sección en la página */
+  height: 360px;
+  /* Define una altura para la sección */
+}
+
+.requisitos-texto {
+  width: 50%;
+  /* Controla el ancho del texto */
+  padding-right: 20px;
+}
+
+.requisitos-texto h3 {
+  font-size: 2.5rem;
+  color: #003380;
+  margin-bottom: 15px;
+}
+
+.requisitos-texto input {
+  margin-right: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.requisitos-imagen {
+  width: 35%;
+  /* Controla el ancho de la imagen */
+}
+
+.requisitos-imagen img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {  
+  .requisitos { 
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .requisitos-texto {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  .requisitos-imagen {
+    width: 100%;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos para las tarjetas */
+.tarjetas {
+  width: 200px;
+  /* Ancho de la tarjeta */
+  height: 300px;
+  /* Aumentar el alto de la tarjeta para hacerla más larga */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para la sección */
+.contenido {
+  background: linear-gradient(
+    to bottom,
+    #09504a ,    /* Verde oscuro */
+    #4d857d ,    /* Verde medio */
+    #93cfca ,    /* Verde claro */
+    #cbeeea ,
+    #ffffff   /* Blanco */
+  );
+  
+  /* Degradado de color */
+  padding: 40px 20px;
+  /* Añadir algo de padding para separar el contenido de los bordes */
+}
+
+/* Estilos para el título */
+.sud {
+  text-align: center;
+  font-size: 2.8em;
+  color: #fff;
+  /* Color blanco para el título */
+  margin-bottom: 20px;
+}
+
+/* Estilos para las tarjetas */
+.tarjetas {
+  width: 200px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen dentro de las tarjetas */
+.tarjetas img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Efecto al pasar el cursor sobre la tarjeta */
+.tarjetas:hover {
+  transform: rotate(-10deg);
+}
+
+/* Alinear las tarjetas en una fila */
+.tarjeta-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  /* Elementos en columna */
+  align-items: flex-start;
+  /* Alinea las secciones a la izquierda */
+  gap: 20px;
+  /* Espaciado entre las secciones */
+  margin: 20px;
+  width: 50%;
+  /* Ocupa el 50% del ancho de la pantalla */
+}
+
+/* Contenedor de las secciones */
+.secciones {
+  display: flex;
+  flex-direction: column;
+  /* Coloca las secciones en una sola columna */
+  gap: 20px;
+  /* Espaciado entre secciones */
+  width: 100%;
+  /* Asegura que las secciones ocupen todo el ancho del contenedor */
+}
+
+/* Estilo de cada sección */
+.seccion {
+  color: #ffffff;
+  width: 100%;
+  /* Asegura que cada sección ocupe todo el ancho del contenedor */
+  background: linear-gradient(to bottom, #09504a, #93cfca, #ffffff);
+  border: 1px solid #fffdfd;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border-color: #eccb8a;
+  /* Opcional: alinea el contenido interno a la izquierda */
+}
+
+.seccion h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  /* Espacio entre el título y el contenido */
+}
+
+.seccion p {
+  margin: 30px;
+  /* Elimina el margen predeterminado */
+  padding: 0;
+  /* Elimina el relleno predeterminado */
+}
+
+.seccion img {
+
+  display: block;
+  margin: 0 auto;
+  /* Centra la imagen horizontalmente */
+  max-width: 100%;
+  /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto;
+  /* Ajusta la altura automáticamente para mantener la proporción de aspecto */ 
+  margin-bottom: 40px;
+} 
+
+.contenido-subtitulo p {
+  color: #09504a;
+  margin: 0;
+  /* Elimina el margen predeterminado */
+  padding: 0;
+  /* Elimina el relleno predeterminado */
+} 
+
+.contenido-subtitulo ul {
+  color: #09504a;
+  margin: 0;
+  /* Elimina el margen predeterminado */
+  padding: 0;
+  /* Elimina el relleno predeterminado */
+}
+
+
+/* Estilos para subtítulos */
+.subtitulo {
+  text-align: center;
+  color: #064740;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px;
+  margin-top: 8px;
+  background-color: #eccb8a;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.subtitulo:hover {
+  background-color: #7d673b9a;
+}
+
+/* Contenido de subtítulos (oculto por defecto) */
+.contenido-subtitulo {
+  display: none;
+  padding: 12px;
+  margin-top: 5px;
+  background-color: #fafafa;
+  border-left: 3px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Contenedor principal que incluye a .contenedor-principal y .proyectos */
+.contenedor-total {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente el contenedor .contenedor-principal */
+  align-items: flex-start;
+  /* Alinea el contenido en la parte superior */
+  width: 100%;
+  /* Ocupa todo el ancho de la pantalla */
+  gap: 40px;
+  /* Espacio entre los contenedores */
+  margin-top: 30px;
+}
+
+
+
+/* Estilos para la .proyectos (columna derecha) */
+.proyectos {
+  width: 30%;
+  background-color:       #479387;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  height: auto;
+  overflow-y: auto;
+  position: sticky;
+  top: 100px;
+  z-index: 60;
+}
+
+/* Título de la sección proyectos */
+.tituloPro {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Botones dentro de .proyectos */
+.lista-proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.proyecto {
+  background-color:  #ffc97992;
+  color: white;
+  font-size: 14px;
+  /* Reducir el tamaño de la fuente */
+  font-weight: bold;
+  padding: 10px;
+  /* Reducir el padding */
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 70%;
+  /* Ajustar el ancho al 70% del contenedor */
+  margin: 0 auto;
+  /* Centrar los botones dentro de su contenedor */
+}
+
+.proyecto:hover {
+  background-color:#946d3392;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {  
+
+  .contenedor-total {   
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .proyectos {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .contenedor-principal {
+    width: 100%;
+  }
+  
+  .tituloPro {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .proyecto {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+
+  .contenido-subtitulo {
+    font-size: 14px;
+  }   
+.subtitulo p{
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+  
+}
