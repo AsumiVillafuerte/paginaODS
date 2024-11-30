@@ -13,7 +13,7 @@ document.getElementById('registroForm').addEventListener('submit', async (e) => 
     console.log('Datos enviados:', formData);
 
     try {
-        const response = await fetch('http://44.223.152.75:3000/registro', {
+        const response = await fetch('http://44.223.152.75:3001/registro', {
 
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

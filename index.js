@@ -23,10 +23,10 @@ let connection;
 async function initializeDatabase() {
     try {
         connection = await mysql2.createConnection({
-            host: 'dbformulario-pregunta.clkuym08mzj4.us-east-1.rds.amazonaws.com',
+            host: 'pagina.c16eemkuyw4f.us-east-1.rds.amazonaws.com',
             database: 'formulario',
             user: 'admin',
-            password: 'yolanda2422mateo'
+            password: '989806086asumi'
         });
         console.log('Conectado a la base de datos de eventos.');
     } catch (error) {
@@ -64,10 +64,10 @@ startServer();
 /Formulario/
 
 const conexion = mysql.createConnection({
-    host: 'dbformulario-pregunta.clkuym08mzj4.us-east-1.rds.amazonaws.com',
+    host: 'pagina.c16eemkuyw4f.us-east-1.rds.amazonaws.com',
     database: 'formulario',
     user: 'admin',
-    password: 'yolanda2422mateo'
+    password: '989806086asumi'
 });
 
 conexion.connect((error) => {
@@ -100,5 +100,5 @@ app.post('/registro', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server on port http://3.226.228.42:${port}`);
+    console.log(`Server on port http://44.223.152.75:${port}`);
 })
